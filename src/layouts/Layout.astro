@@ -11,6 +11,10 @@ let showTitle = title;
 if (Astro.props.title) {
 	showTitle = title + " - thomaspcole.com";
 }
+
+if (title === "_") {
+	showTitle = "thomaspcole.com";
+}
 ---
 
 <!doctype html>
